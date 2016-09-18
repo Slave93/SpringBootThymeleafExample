@@ -1,0 +1,38 @@
+<html layout:decorator="layout">
+
+<div layout:fragment="content">
+	<a class="btn btn-danger" href="/news/new">Add new</a>
+
+	<table class="table table-striped" id="news_list">
+		<thead>
+			<tr>
+				<th>Content</th>
+				<th>Date created</th>
+				<th>Author</th>
+				<th>Delete</th>
+				<th>Edit</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr data-th-each="news : ${news}">
+				<td class="message" data-th-text="${news.message}"></td>
+				<td class="message" data-th-text="${news.created}"></td>
+				<td class="message" data-th-text="${news.author}"></td>
+
+				<td><a th:href="@{'/news/{id}/delete'(id=${news.id})}"
+					class="delete"> <span class="fa-stack"> <i style="color:red"
+							class="glyphicon glyphicon-trash"></i>
+					</span>
+				</a></td>
+
+				<td><a th:href="@{'/news/{id}/edit'(id=${news.id})}"
+					class="edit"> <span class="fa-stack"> <i style="color:red"
+							class="glyphicon glyphicon-edit"></i>
+					</span>
+
+				</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</html>

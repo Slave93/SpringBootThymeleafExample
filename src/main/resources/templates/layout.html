@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport"
+	content="width=device-width, shrink-to-fit=no, initial-scale=1"/>
+<meta name="description" content=""/>
+<meta name="author" content=""/>
+
+<title>Simple Sidebar - Start Bootstrap Template</title>
+
+<!-- Custom CSS -->
+<link href="/css/simple-sidebar.css" rel="stylesheet"/>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+	integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+	crossorigin="anonymous" />
+
+<!-- JQuery and Bootstrap core JS -->	
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+	integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+	crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li class="sidebar-brand"><a href="/news"> All news
+				</a></li>
+			<li><a href="/news?action=new"> Latest news
+				</a></li>
+			</ul>
+		</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div layout:fragment="content">
+					<!-- ============================================================================ -->
+					<!-- This content is only used for static prototyping purposes (natural templates)-->
+					<!-- and is therefore entirely optional.                                          -->
+					<!-- ============================================================================ -->
+					<h1>Static content for prototyping purposes only</h1>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Praesent scelerisque neque neque, ac elementum quam dignissim
+						interdum. Phasellus et placerat elit. Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit. Praesent scelerisque neque neque, ac
+						elementum quam dignissim interdum. Phasellus et placerat elit.</p>
+
+				</div>
+			</div>
+			<a href="#menu-toggle" class="btn btn-danger" id="menu-toggle">
+			Toggle
+				Menu</a>
+		</div>
+		<!-- /#page-content-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- Menu Toggle Script -->
+	<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

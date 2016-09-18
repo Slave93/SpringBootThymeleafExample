@@ -1,0 +1,8 @@
+target/
+firstapp.iml
+firstapp.ipr
+firstapp.iws
+.idea/
+.settings
+.classpath
+.project
